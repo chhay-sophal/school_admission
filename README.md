@@ -21,7 +21,27 @@
 8. Once the repository is cloned, you can navigate to the cloned directory and start set up the environment.
 
 ## Activate the environment
-1. Activate the environment
+1. Check if pip is already installed: Open a command prompt or terminal and type the following command:
+   ```
+   pip --version
+   ```
+   If pip is installed, it will display the version number. If not, you will see an error message.
+2. Install or upgrade pip using the official installation script: Open a command prompt or terminal, and run the following command:
+    ```
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    ```
+3. Once the script is downloaded, run the following command to install or upgrade pip:
+    ```
+    python get-pip.py
+    ```
+    This command will execute the script and install or upgrade pip accordingly. Make sure you have administrative privileges if you're on a system that requires it.
+
+4. Verify the installation: After the installation process completes, you can verify that pip is installed correctly by running the following command:
+    ```
+    pip --version
+    ```
+    It should now display the version number, indicating that pip is installed and ready to use.
+5. Activate the environment
     ```
     school-admission\Scripts\activate.bat
     ```
