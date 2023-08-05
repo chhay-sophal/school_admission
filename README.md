@@ -1,4 +1,4 @@
-# school-admission
+# school_admission
 
 ## Here are the steps on how to get started:
 
