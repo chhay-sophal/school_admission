@@ -17,11 +17,12 @@
     source myenv/bin/activate
     ```
 ### 6. Clone the repository inside your env
-    git clone <repository_url>
+    git clone https://github.com/chhay-sophal/school_admission.git
 ### 7. Install project dependencies
 Navigate to the project's root directory (the one containing manage.py). Use pip to install the project dependencies by running:
 
     pip install -r requirements.txt
+    
 This command will install all the necessary packages specified in the requirements.txt file.
 ### 7. Set up the database
     python manage.py migrate
