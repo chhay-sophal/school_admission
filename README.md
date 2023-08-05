@@ -2,51 +2,30 @@
 
 ## Here are the steps on how to get started:
 
-1. Clone the repository to their computer.
-2. Activate the virtual environment.
-3. Install the required Python packages.
-4. Run Django.
+### 1. Install the latest Python on your machine
+- **Method 1:** Download the installer from the Python website: Go to the Python website: https://www.python.org/downloads/ and click on the Download Python button. You will be prompted to choose a version of Python and a download method. Once you have chosen a version and a download method, the installer will be downloaded to your computer.
+- **Method 2:** Install Python using the Microsoft Store: If you are using Windows, you can install Python using the Microsoft Store. To do this, open the Microsoft Store and search for "Python." Click on the Python app and then click on the Install button.
+### 2. Create the virtual environment
+    python -m venv myenv
+### 5. Activate the virtual environment
+- **Windows:**
+    ```
+    myenv\Scripts\activate
+    ```
+- **Mac/Linux:**
+    ```
+    source myenv/bin/activate
+    ```
+### 6. Clone the repository inside your env
+    git clone <repository_url>
+### 7. Install project dependencies
+Navigate to the project's root directory (the one containing manage.py). Use pip to install the project dependencies by running:
 
-## Clone this repository on your computer
-1. Go to the GitHub repository that you want to clone.
-2. Click on the "Code" button on the right side of the page.
-3. Click on the HTTPS option to copy the repository URL.
-4. Open a terminal or command prompt and navigate to the directory where you want to clone the repository.
-5. Run the following command to clone the repository:
-    ```
-    git clone <repository-url>
-    ```
-6. Replace <repository-url> with the URL you copied in step 3.
-7. When prompted, enter your GitHub username and password to authenticate.
-8. Once the repository is cloned, you can navigate to the cloned directory and start set up the environment.
+    pip install -r requirements.txt
+This command will install all the necessary packages specified in the requirements.txt file.
+### 7. Set up the database
+    python manage.py migrate
+### 8. Start the development server
+    python manage.py runserver
 
-## Activate the environment
-1. Check if pip is already installed: Open a command prompt or terminal and type the following command:
-   ```
-   pip --version
-   ```
-   If pip is installed, it will display the version number. If not, you will see an error message.
-2. Install or upgrade pip using the official installation script: Open a command prompt or terminal, and run the following command:
-    ```
-    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    ```
-3. Once the script is downloaded, run the following command to install or upgrade pip:
-    ```
-    python get-pip.py
-    ```
-    This command will execute the script and install or upgrade pip accordingly. Make sure you have administrative privileges if you're on a system that requires it.
-
-4. Verify the installation: After the installation process completes, you can verify that pip is installed correctly by running the following command:
-    ```
-    pip --version
-    ```
-    It should now display the version number, indicating that pip is installed and ready to use.
-5. Activate the environment
-    ```
-    school-admission\Scripts\activate.bat
-    ```
-## Install the required Python packages
-1. Install Django
-   ```
-   python -m pip install Django
-   ```
+Hope everything works great!
