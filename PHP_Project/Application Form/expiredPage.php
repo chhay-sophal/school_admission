@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+    <style>
+        @font-face {
+            font-family: Poppins;
+            src: url(Fonts/Poppins.ttf);
+        }
+        @font-face {
+            font-family: Krasar;
+            src: url(Fonts/Krasar.ttf);
+        }
+        body{
+            font-family: Poppins;
+            background-color: #F4F7FC;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            Swal.fire({
+                title: 'Application form closed',
+                text: 'Your registration is reached our deadline!',
+                iconHtml: '<img src="assets/img/icon/sad.png" alt="" style="height: 100px;" />',
+                allowEscapeKey: 'true',
+                allowOutsideClick: false,
+                confirmButtonText: 'HOME',
+                confirmButtonColor: '#062553',
+                confirmButtonPadding: '100px'
+            }).then(response => {
+                if(response.isConfirmed){
+                    window.location.href = 'http://localhost:8080/application%20form/index.php';
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
